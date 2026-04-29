@@ -7,6 +7,7 @@ private:
 	std::string ID;
 	float position;
 	float velocity;
+
 public:
 
 	Car(std::string name, float startPos, float startingSpeed);

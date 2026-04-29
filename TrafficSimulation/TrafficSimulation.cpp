@@ -2,10 +2,39 @@
 //
 
 #include <iostream>
-
+#include <string>
+#include <vector>
+#include <math.h>
+#include "Car.h"
+#include "TrafficLight.h"
+#include "Simulation.h"
 int main()
 {
-    std::cout << "Hello World!\n";
+    int numOfCars = 50;
+    int numOfTrafficLights = 20;
+    float startingPos = -(numOfCars * 5);
+
+    std::vector<Car> carsVector;
+    carsVector.reserve(numOfCars);
+    for (int i = 0; i < numOfCars; i++) {
+        Car myCar(std::to_string(i), startingPos, 20.0f);
+        carsVector.push_back(myCar);
+    }
+    std::vector<TrafficLight> lightsVector;
+    carsVector.reserve(numOfTrafficLights);
+    for (int i = 0; i < numOfTrafficLights; i++) {
+        TrafficLight myLight(100.0f, LightColor::RED);
+        lightsVector.push_back(myLight);
+    }
+
+   
+  
+ 
+    Simulation sim(carsVector, lightsVector);
+    sim.run();
+    
+
+    return 0;
 }
 
 // Uruchomienie programu: Ctrl + F5 lub menu Debugowanie > Uruchom bez debugowania

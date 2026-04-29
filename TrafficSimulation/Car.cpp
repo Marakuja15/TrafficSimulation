@@ -1,8 +1,9 @@
 #include "Car.h"
+#include "TrafficLight.h"
 #include <iostream>
 #include <string>
-Car::Car(std::string name, float startingPos, float StartingSpeed) : 
-	ID(name), position(startingPos), velocity(StartingSpeed) {};
+Car::Car(std::string name, float startingPos, float startingSpeed) : 
+	ID(name), position(startingPos), velocity(startingSpeed) {};
 void Car::update(float deltaTime) {
 	position += velocity * deltaTime;
 }

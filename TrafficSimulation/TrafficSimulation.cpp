@@ -21,7 +21,7 @@ int main()
         carsVector.push_back(myCar);
     }
     std::vector<TrafficLight> lightsVector;
-    carsVector.reserve(numOfTrafficLights);
+    lightsVector.reserve(numOfTrafficLights);
     for (int i = 0; i < numOfTrafficLights; i++) {
         TrafficLight myLight((i + 1) * 100.0f, LightColor::RED);
         lightsVector.push_back(myLight);

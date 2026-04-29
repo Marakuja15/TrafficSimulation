@@ -1,2 +1,5 @@
 ﻿  Simulation.cpp
+  TrafficSimulation.cpp
+C:\Users\piotr\Projects\cpp\TrafficSimulation\TrafficSimulation\TrafficSimulation.cpp(15,23): warning C4244: "inicjowanie": konwersja z "int" do "float", możliwa utrata danych
+  Generowanie kodu...
   TrafficSimulation.vcxproj -> C:\Users\piotr\Projects\cpp\TrafficSimulation\x64\Debug\TrafficSimulation.exe

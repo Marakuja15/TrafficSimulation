@@ -17,14 +17,15 @@ int main()
     std::vector<Car> carsVector;
     carsVector.reserve(numOfCars);
     for (int i = 0; i < numOfCars; i++) {
-        Car myCar(std::to_string(i), startingPos, 20.0f);
+        Car myCar(std::to_string(i), i * startingPos, 20.0f);
         carsVector.push_back(myCar);
     }
     std::vector<TrafficLight> lightsVector;
     carsVector.reserve(numOfTrafficLights);
     for (int i = 0; i < numOfTrafficLights; i++) {
-        TrafficLight myLight(100.0f, LightColor::RED);
+        TrafficLight myLight((i + 1) * 100.0f, LightColor::RED);
         lightsVector.push_back(myLight);
+        
     }
 
    

@@ -11,6 +11,6 @@ public:
 	Simulation(const std::vector<Car>& scars,const std::vector<TrafficLight>& slights);
 
 	void run();
-
+	void check(Car &car, TrafficLight &currentLight);
 	
 };
